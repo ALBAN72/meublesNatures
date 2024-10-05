@@ -7,6 +7,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.carousel-inner > .item > img {
+	height:80vh;
+	object-fit:contain
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -149,18 +155,26 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		color: #3e3e3e;
 		margin: 0 0 0.75em 0;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h4 a, h5 a, h6 a {
 		text-decoration: none;
 		color: inherit;
 	}
 
-	h2, h3, h4, h5, h6 {
+	h2, h4, h5, h6 {
 		font-weight: 700;
+	}
+
+	h3 {
+		font-weight: normal; /* Suppression du gras */
+		font-size: 1.5em; /* Taille personnalisée, ajustable */
+		color: #3a6351; /* Couleur naturelle, inspirée de la nature */
+		font-family: 'Arial', sans-serif; /* Police personnalisée */
+		margin-bottom: 15px; /* Ajout d'un peu d'espacement en bas */
 	}
 
 	h1 {
@@ -175,11 +189,6 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2em;
-		letter-spacing: -0.015em;
-	}
-
-	h3 {
-		font-size: 1.5em;
 		letter-spacing: -0.015em;
 	}
 
@@ -2252,7 +2261,7 @@ input, select, textarea {
 				letter-spacing: 0;
 			}
 
-			h1, h2, h3, h4, h5, h6 {
+			h1, h2, h4, h5, h6 {
 				font-size: 1.25em;
 				margin: 0 0 0.4em 0;
 			}
@@ -2443,3 +2452,6 @@ input, select, textarea {
 					}
 
 	}
+
+
+

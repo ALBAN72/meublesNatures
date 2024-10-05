@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Miniport by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -22,47 +25,70 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/cyprien.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Salut je m'appelle <strong>Cyprien</strong>.</h1>
-								<h3>je suis en apprentissage contrustion bois</h3>
+								<h3>je suis en apprentissage contruction bois</h3>
 							</header>
 							<a href="#portfolio" class="button large scrolly">En savoir plus sur ce que je fais</a>
 						</div>
 					</div>
 				</div>
 			</article>
-
-
 		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Voici quelque trucs que j'ai fait récemment</h2>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Magna feugiat</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+		<article id="portfolio" class="wrapper style3">
+			<div class="container">
+				<div id="carouselExampleCaptions" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item">
+							<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg> -->
+							<img src="images/tablefeuille.jpg" class="d-block w-100" alt="ma table feuille">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>ma table feuille</h5>
+								<p>Parfait pour les Orchidées, les Spathiphyllum </p>
+							</div>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Veroeros primis</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+						<div class="carousel-item">
+							<img src="images/cabane.jpg" class="d-block w-100" alt="ma première cabane">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>ma première cabane</h5>
+								<p>les outils, la tondeuse sont au sec pour l'hivers</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/maillet.jpg" class="d-block w-100" alt="ma premier maillet">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>mon premier maillet</h5>
+								<p>La masse et le manche en être</p>
+							</div>
+						</div>
+						<div class="carousel-item active">
+							<img src="images/portelame.jpg" class="d-block w-100" alt="mon porte lame">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>porte lame</h5>
+								<p>attention ça coupe....</p>
+							</div>
 						</div>
 					</div>
-					<footer>
-						<a href="#contact" class="button large scrolly">Tu veux prendre contact avec moi ?</a>
-					</footer>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<!-- Contact -->
 			<article id="contact" class="wrapper style4">
@@ -135,7 +161,6 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
 </html>
